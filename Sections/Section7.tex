@@ -1,2 +1,24 @@
 \section{Challenges and Limitations}
-What are some of the difficulties that you are likely to face in this project? What can your project not achieve?
+\subsection{Challanges}
+\subsubsection{Accuracy}
+The biggest challenge in developing the AI-based platform for automating the hiring workflow is the accuracy of the systems. As we need to use a few different AI models to get the desired results i.e. model for resume parsing, ML model to detect human emotions from speech recognition, behavioral patterns, body gestures, and movements, on the different stages of the hiring workflow. It will be very difficult to maintain the accuracy of the system in which we are using different machine learning models to obtain results as the error percentage of these ML models will be compounded together.
+
+\subsubsection{Observance of Soft Skills}
+It will be difficult to observe the soft skills of the candidate. In order to observe the soft skills of the candidate, there will be a need for multiple ML models running simultaneously on the real-time video of the candidate. Because we need to detect the emotions from speech recognition, behavioral patterns, body gestures, and movements for this. Emotion detection through biosignals faces a major challenge as a single biosignal is not enough because a single biosignal may indicate multiple possibilities of emotions and for that, we will need to use multiple biosignals from the body. So for that, we may face the major challenge of integrating all the above-mentioned ML models in our system. 
+
+\subsubsection{Data Acquaintance}
+In order to train our models to observe the soft and technical skills of the candidate, we need large and diverse datasets. Most of the publicly available datasets may will not be sufficient as they will contain limited sets of emotional expressions\cite{hiringstatistics}. So to overcome this challenge we may will be required to develop a dataset by ourselves. 
+
+\subsubsection{Dialectal Difference}
+Most of the models that are present nowadays for speech recognition are based on the western accents therefore our difference in dialect and even though if a person is technically skilled for the job but has a slight difference in his/her dialect then it might affect the ability of system to record his/her answers and if system error or mistake occurs it will most certainly affect his performance overall.
+
+\subsection{Limitations}
+\subsubsection{Language}
+As of now we are focusing our project on just one language i.e. English in order to keep reducing complications as much as possible. Even with a single language, we face a problem of dialect difference and if we work on multiple languages from the start it would greatly affect the performance of other areas of our project.
+
+\subsubsection{Domain-Specific}
+The recruitment process is crucial to every industry but in order to test its efficiency and performance, we are making it specific to a single field i.e. development that we have a better understanding of than others. So the criteria and metrics will be set according to the field we selected. 
+
+\subsubsection{Error Dependency}
+Our solution is based on different models that are specific to certain features and tests. Therefore, errors of each model will then accumulate into a compound error which will be directly affected by each model’s precision. In short we are limited by the performance of each model we are using as performance anomaly in a single model will greatly affect overall performance.
+
